@@ -11,10 +11,10 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
 
     <!-- Common Compiler Defines (semicolon delimited) -->
-    <Defines></Defines>
+    <Defines>HAVE_CONFIG_H;LOCALE_ALIAS_PATH="";LOCALEDIR="";LIBDIR="";BUILDING_LIBINTL;BUILDING_DLL=1;IN_LIBINTL;ENABLE_RELOCATABLE=1;IN_LIBRARY;INSTALLDIR="";NO_XMALLOC;set_relocation_prefix=libintl_set_relocation_prefix;relocate=libintl_relocate;DEPENDS_ON_LIBICONV=1</Defines>
 
     <!-- Additional Include folders (semicolon delimited) -->
-    <IncludeDirectories></IncludeDirectories>
+    <IncludeDirectories>include</IncludeDirectories>
 
     <!-- Additional Library folders (semicolon delimited) -->
     <LibraryDirectories></LibraryDirectories>
@@ -69,7 +69,7 @@
     <ClCompile Include="..\gettext-runtime\intl\dcngettext.c" />
     <ClCompile Include="..\gettext-runtime\intl\dngettext.c" />
     <ClCompile Include="..\gettext-runtime\intl\ngettext.c" />
-    <ClCompile Include="..\gettext-runtime\intl\plural.y" />
+    <ClCompile Include="..\gettext-runtime\intl\plural.c" />
     <ClCompile Include="..\gettext-runtime\intl\plural-exp.c" />
     <ClCompile Include="..\gettext-runtime\intl\localcharset.c" />
     <ClCompile Include="..\gettext-runtime\intl\threadlib.c" />
@@ -83,8 +83,6 @@
     <ClCompile Include="..\gettext-runtime\intl\version.c" />
     <ClCompile Include="..\gettext-runtime\intl\xsize.c" />
     <ClCompile Include="..\gettext-runtime\intl\osdep.c" />
-    <ClCompile Include="..\gettext-runtime\intl\os2compat.c" />
-    <ClCompile Include="..\gettext-runtime\intl\intl-exports.c" />
     <ClCompile Include="..\gettext-runtime\intl\intl-compat.c" />
   </ItemGroup>
 
