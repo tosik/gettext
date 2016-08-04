@@ -10,9 +10,9 @@ configurations {
 
 nuget {
 	nuspec {
-		id = libintl.vp;
+		id: libintl.vp;
 		version : ${package-version};
-		title: libintl;
+		title: "Gettext runtime library";
 		authors: {GNU gettext contributors};
 		owners: {CoApp Project, Vincent Povirk};
 		licenseUrl: "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html";
