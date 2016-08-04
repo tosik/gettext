@@ -1,0 +1,30 @@
+LIBRARY
+
+EXPORTS
+    gettext
+    dgettext
+    ngettext
+    dngettext
+    dcngettext
+    textdomain
+    bindtextdomain
+    bind_textdomain_codeset
+    libintl_fprintf
+    libintl_vfprintf
+    libintl_printf
+    libintl_vprintf
+    libintl_sprintf
+    libintl_vsprintf
+    libintl_snprintf
+    libintl_vsnprintf
+    libintl_asprintf
+    libintl_vasprintf
+    libintl_fwprintf
+    libintl_vfwprintf
+    libintl_wprintf
+    libintl_vwprintf
+    libintl_swprintf
+    libintl_vswprintf
+    libintl_setlocale
+;    libintl_newlocale
+    libintl_set_relocation_prefix
