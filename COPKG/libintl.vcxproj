@@ -10,43 +10,10 @@
   <PropertyGroup Label="ConfigurationSettings">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
 
-    <!-- Common Compiler Defines (semicolon delimited) -->
     <Defines>HAVE_CONFIG_H;LOCALE_ALIAS_PATH="";LOCALEDIR="";LIBDIR="";BUILDING_LIBINTL;BUILDING_DLL=1;IN_LIBINTL;ENABLE_RELOCATABLE=1;IN_LIBRARY;INSTALLDIR="";NO_XMALLOC;set_relocation_prefix=libintl_set_relocation_prefix;relocate=libintl_relocate</Defines>
 
-    <!-- Additional Include folders (semicolon delimited) -->
     <IncludeDirectories>include</IncludeDirectories>
 
-    <!-- Additional Library folders (semicolon delimited) -->
-    <LibraryDirectories></LibraryDirectories>
-
-    <!-- Libraries to Link with -->
-    <Libraries></Libraries>
-    
-    <!-- Batch script to run before Build-->
-    <PreBuild></PreBuild>
-
-    <!-- Batch script to run after Build-->
-    <PostBuild></PostBuild>
-
-    <!-- Batch script to run before Link step-->
-    <PreLink></PreLink>
-
-    <!-- Batch script to run after Link-->
-    <PostLink></PostLink>
-
-    <!-- Batch script to run before Lib step-->
-    <PreLib></PreLib>
-
-    <!-- Batch script to run after Lib-->
-    <PostLib></PostLib>
-
-    <!-- Targets to run before Build (semcolon delimited)-->
-    <PreBuildTargets></PreBuildTargets>
-
-    <!-- Targets to run before Build (semcolon delimited)-->
-    <PostBuildTargets></PostBuildTargets>
-  
-    <!-- for Dynamic libs, you can specify the Module .DEF file path -->
     <ModuleDefinitionFile>libintl.def</ModuleDefinitionFile>
   </PropertyGroup>
 
