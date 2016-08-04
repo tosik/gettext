@@ -158,7 +158,7 @@ set_this_relocation_prefix (const char *orig_prefix_arg,
    by the corresponding pathname with the current prefix instead.  Both
    prefixes should be directory names without trailing slash (i.e. use ""
    instead of "/").  */
-__declspec(dllexport) void
+void
 set_relocation_prefix (const char *orig_prefix_arg, const char *curr_prefix_arg)
 {
   set_this_relocation_prefix (orig_prefix_arg, curr_prefix_arg);

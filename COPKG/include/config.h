@@ -178,7 +178,7 @@
 #undef HAVE_ARGZ_STRINGIFY
 
 /* Define to 1 if you have the `asprintf' function. */
-#undef HAVE_ASPRINTF
+#define HAVE_ASPRINTF 1
 
 /* Define to 1 if you have the `atexit' function. */
 #define HAVE_ATEXIT 1

@@ -433,7 +433,7 @@ extern int vswprintf (wchar_t *, size_t, const wchar_t *, va_list);
 #ifndef GNULIB_defined_setlocale /* don't override gnulib */
 #undef setlocale
 #define setlocale libintl_setlocale
-extern __declspec(dllexport) char *setlocale (int, const char *);
+extern char *setlocale (int, const char *);
 #endif
 
 #if 0 //@HAVE_NEWLOCALE@
@@ -455,7 +455,7 @@ extern locale_t newlocale (int, const char *, locale_t);
    prefixes should be directory names without trailing slash (i.e. use ""
    instead of "/").  */
 #define libintl_set_relocation_prefix libintl_set_relocation_prefix
-extern __declspec(dllexport) void
+extern void
        libintl_set_relocation_prefix (const char *orig_prefix,
                                       const char *curr_prefix);
 

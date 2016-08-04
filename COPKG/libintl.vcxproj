@@ -11,7 +11,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
 
     <!-- Common Compiler Defines (semicolon delimited) -->
-    <Defines>HAVE_CONFIG_H;LOCALE_ALIAS_PATH="";LOCALEDIR="";LIBDIR="";BUILDING_LIBINTL;BUILDING_DLL=1;IN_LIBINTL;ENABLE_RELOCATABLE=1;IN_LIBRARY;INSTALLDIR="";NO_XMALLOC;set_relocation_prefix=libintl_set_relocation_prefix;relocate=libintl_relocate;DEPENDS_ON_LIBICONV=1</Defines>
+    <Defines>HAVE_CONFIG_H;LOCALE_ALIAS_PATH="";LOCALEDIR="";LIBDIR="";BUILDING_LIBINTL;BUILDING_DLL=1;IN_LIBINTL;ENABLE_RELOCATABLE=1;IN_LIBRARY;INSTALLDIR="";NO_XMALLOC;set_relocation_prefix=libintl_set_relocation_prefix;relocate=libintl_relocate</Defines>
 
     <!-- Additional Include folders (semicolon delimited) -->
     <IncludeDirectories>include</IncludeDirectories>
@@ -47,7 +47,7 @@
     <PostBuildTargets></PostBuildTargets>
   
     <!-- for Dynamic libs, you can specify the Module .DEF file path -->
-    <ModuleDefinitionFile></ModuleDefinitionFile>
+    <ModuleDefinitionFile>libintl.def</ModuleDefinitionFile>
   </PropertyGroup>
 
   <Import Condition="Exists('$(CoAppEtcDirectory)\common-header.vcxproj')" Project="$(CoAppEtcDirectory)\common-header.vcxproj" />

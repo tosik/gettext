@@ -24,37 +24,9 @@ call :build x64 Release v120
 call :build x64 Debug v120
 endlocal
 
-cd ..
-call :test Win32 Release v140
-call :test Win32 Debug v140
-call :test x64 Release v140
-call :test x64 Debug v140
-call :test Win32 Release v120
-call :test Win32 Debug v120
-call :test x64 Release v120
-call :test x64 Debug v120
-cd COPKG
-
-if "__NOCLEAN__"=="true" goto :eof
-
-goto :clean
+goto :eof
 
 :build
-msbuild /P:Platform=%1 /P:Configuration=%2 /P:PlatformToolset=%3 libintl.vcxproj
+msbuild /P:Platform=%1 /P:Configuration=%2 /P:PlatformToolset=%3 /P:UsesConfigurationType=Dynamic libintl.vcxproj
 goto :eof
-
-:failed
-set __FAILED__=true
-echo tests failed for %1 %2 %3
-goto :eof
-
-:clean
-rd /s /q ..\projects\vstudio\libpng\v120
-rd /s /q ..\projects\vstudio\pnglibconf\v120
-rd /s /q ..\projects\vstudio\pngtest\v120
-rd /s /q ..\projects\vstudio\pngvalid\v120
-rd /s /q ..\projects\vstudio\libpng\v140
-rd /s /q ..\projects\vstudio\pnglibconf\v140
-rd /s /q ..\projects\vstudio\pngtest\v140
-rd /s /q ..\projects\vstudio\pngvalid\v140
 
