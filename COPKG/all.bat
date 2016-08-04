@@ -6,8 +6,6 @@ if "%1"=="noclean" (
 	set __NOCLEAN__=true
 	shift)
 
-copy include\libgnuintl.h libintl.h
-
 nuget install packages.config
 
 setlocal
