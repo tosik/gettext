@@ -4,6 +4,7 @@ EXPORTS
     libintl_version
     libintl_gettext
     libintl_dgettext
+    libintl_dcgettext
     libintl_ngettext
     libintl_dngettext
     libintl_dcngettext
