@@ -35,7 +35,7 @@
 #if HAVE_VISIBILITY && BUILDING_DLL
 # define DLL_EXPORTED __attribute__((__visibility__("default")))
 #elif defined _MSC_VER && BUILDING_DLL
-# define DLL_EXPORTED
+# define DLL_EXPORTED __declspec(dllexport)
 #else
 # define DLL_EXPORTED
 #endif
